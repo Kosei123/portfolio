@@ -1,0 +1,272 @@
+*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --primary-050: #66cdaa; 
+    --secondary-050: #87cefa;
+    --dark-087: rgba(0,0,0,0.87);
+    --dark-054: rgba(0,0,0,0.54);
+    --dark-026: rgba(0,0,0,0.26);
+    --dark-012: rgba(0,0,0,0.12);
+    --light-100: rgba(255,255,255,1.00);
+    --light-070: rgba(255,255,255,0.70);
+    --light-030: rgba(255,255,255,0.30);
+    --light-012: rgba(255,255,255,0.12);
+    --gray-010: #f1f1f1;
+    --gray-020: #e4e4e4;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, 'BIZ UDGothic', "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    font-feature-settings: "palt";
+    font-size: 16pt;
+}
+
+body {
+    text-align: center;
+    position: relative;
+    font-size: 1em;
+    line-height: 1;
+    
+}
+
+header{
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.listup {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+
+  }
+
+header .listup {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+header .listup h1 {
+    font-weight: normal;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    flex: 1;
+   
+  }
+
+header .listup nav ul {
+    display: flex;
+    font-size: 1.5rem;
+  }
+
+header .listup nav ul li {
+    list-style: none;
+    padding: 1rem 1rem;
+    color: var(--primary-050);
+    text-shadow: 1px 1px 0 var(--dark-026);
+    transition: color,background-color 0.3s;
+    border-right: 1px solid var(--dark-012);
+    border-top: 4px solid transparent; 
+    border-bottom: 4px solid transparent; 
+ }
+
+ header .listup nav ul li:hover{
+    background-color: var(--primary-050);
+    color: var(--secondary-050);
+    border-bottom: 4px solid var(--secondary-050);
+ }
+
+
+
+  #top {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  #top>h1 {
+    text-align: center;
+    font-size: 5rem;
+    text-shadow: 1px 1px 3px #ffffff, -1px -1px 0px #ebebeb;
+  }
+  
+
+  .slider-controller {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .slider-controller ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #sc-to-left,
+  #sc-to-right {
+    display: inline-block;
+    font-size: 2rem;
+    width: 120px;
+    line-height: 3em;
+    background-color: #bbb;
+    color: #f0f0f0;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0.75;
+  }
+/* 
+自己紹介
+*/
+
+  .about {
+    padding: 150px 0;
+  }
+  .about h3 {
+    font-weight: normal;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .about h3 small {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .about .vision {
+    display: flex;
+    background-color: rgb(230, 230, 230);
+  }
+  .about .vision .vision-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+  }
+  .about .vision .vision-texts h4 {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  .about .vision .vision-texts p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    flex: 1;
+  }
+  .about .vision .vision-images {
+    flex: 1;
+  }
+
+  .about .vision .vision-images img {
+    margin-left: 40px;
+    margin-top: 60px;
+       width: 350px;
+       height: auto;
+       size: center;
+       position: center;
+       grid-area: right;
+  }
+
+/*
+作品紹介
+*/
+  .service {
+    background-color: rgba(0, 0, 0, 0.025);
+    padding: 150px 0;
+  }
+  .service h3 {
+    font-weight: normal;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .service h3 small {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .service .service-item-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .service .service-item-container .service-item {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+  }
+  .service .icon-container .service-icon {
+    display: inline-block;
+    height: 140px;
+    border-radius: 16px;
+    margin: 2rem 0 4rem;
+  }
+
+  .service .icon-container .service-icon img {
+      width: 300px;
+      height: auto;
+  }
+
+  .service .service-main .service-item-container .service-item h4 {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  .service .service-main .service-item-container .service-item p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  
+  
+  
+
+footer{
+  margin-top: 150px;
+  padding-top: 150px;
+  background-color: #363636;
+  color: #777;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h2 {
+    font-weight: normal;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+  }
+
+footer nav {
+    flex: 1;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+}
+
+footer nav ul li {
+    padding: 0 1rem;
+}
+  
