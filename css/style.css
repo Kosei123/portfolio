@@ -270,3 +270,24 @@ footer nav ul li {
     padding: 0 1rem;
 }
   
+.social {
+  list-style: none; /* リストの・が邪魔なので消します */
+  display: flex; /* フレキシブルに */
+  margin-top: 1.5rem; /* 上部に1.5文字分の外部余白を設定 */
+}
+
+.social li {
+  line-height: 1; /* 文字高さを1文字分とする */
+  padding: 0.5rem;  /* 上下左右に0.5文字分の内部余白をつける */
+  font-size: 1.5rem; /* アイコン(文字)のサイズを1.5文字分とする */
+}
+
+.social li a {
+  text-decoration: none;  /* リンクテキストの装飾をなくす */
+  color: #fff;  /* 文字色変更(任意の文字色に変えて良い) */
+  transition: 1s color; /* 文字色が変化する場合、１秒かけて変化させる定義 */
+}
+
+.social li a:hover {
+  color: #f00;  /* 文字色を変える(任意の文字色に変えて良い) */
+}
